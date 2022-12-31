@@ -17,6 +17,8 @@ public class Main {
         System.out.println(telephoneMap);
 
 
+        System.out.println("задание 3");
+
 
     }
-}
+    }
