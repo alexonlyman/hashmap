@@ -1,5 +1,4 @@
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -18,6 +17,17 @@ public class Main {
 
 
         System.out.println("задание 3");
+
+        Set<Driver> drivers = new HashSet<>();
+        drivers.add(new Driver("Михаил","Городовой","категория B"));
+        drivers.add(new Driver(" Генадий","Городовой","категория B"));
+        drivers.add(new Driver("Михаил","Городовой","категория B"));
+        drivers.add(new Driver("Виктор","Молодой","категория D"));
+        System.out.println();
+        Iterator<Driver> iter = drivers.iterator();
+        while (iter.hasNext()) {
+            System.out.println(iter.next());
+        }
 
 
     }
