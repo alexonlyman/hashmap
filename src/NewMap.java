@@ -6,7 +6,7 @@ public class NewMap {
 
     private static void addNumber(String s, Integer i) {
         var value = intMap.get(s);
-        if (value != null && value == i)
+        if (value != null && value.equals(i))
          {
             throw new RuntimeException(intMap + "значения совпадают");
         }
